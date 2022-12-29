@@ -63,3 +63,15 @@ php artisan key:generate
 ```` 
 php artisan serve
 ```` 
+
+## Run Scheduler for getting Covid Data
+
+```` 
+php artisan schedule:run
+```` 
+
+## Add CroneJobs For Scheduler
+
+```` 
+0 * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
+```` 
